@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "react",
+    "stage-2",
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            ">1%",
+            "last 4 versions",
+            "Firefox ESR",
+            "not ie < 9" // React doesn"t support IE8 anyway
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "react-hot-loader/babel"
+  ]
+}
